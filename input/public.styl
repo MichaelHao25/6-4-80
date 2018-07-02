@@ -1,0 +1,133 @@
+﻿@import "reset.css";
+/*@import "function.css";*/
+/*
+
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#99ffffff,endColorstr=#99ffffff)";  
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+background:rgba(255,255,255,.8);
+
+
+filter:alpha(opacity=40); 针对 IE8 以及更早的版本 */
+
+body
+	font-size 100%
+
+.container
+	max-width 1200px
+	margin 0 auto
+
+h1
+	padding 30px 0
+	font-size 17px
+	color #000000
+	font-weight normal
+	line-height 1
+	text-transform capitalize
+.bd
+	border 1px solid #7baeeb
+
+.top
+	display flex
+	height 220px
+	border-bottom 1px solid #f4f4f4
+	.charts
+		width 80%
+		height 100%
+		border-right 1px solid #f4f4f4
+		display flex
+		.item
+			position relative
+			flex 1
+			height 100%
+			.general
+				position absolute
+				top 20px
+				left 20px
+				text-transform uppercase
+	.term
+		width 20%
+		height 100%
+		display flex
+		align-items center
+		justify-content center
+		flex-direction column
+		.row
+			padding 11px 0
+			max-width 140px
+			display flex
+			justify-content space-between
+			width 100%
+			font-size 12px
+			color #bebdbe
+			text-transform uppercase
+			.value
+				color #000000
+.bottom
+	padding 0 30px 40px
+	.tabs-control
+		padding 30px 0 20px
+		display flex
+		h2
+			font-size 20px
+			color #000000
+			text-transform capitalize
+			&+h2
+				margin-left 20px
+	.tabs-wrap
+		table
+			width 100%
+		thead
+			tr
+			th
+				font-size 12px
+				color #d7dce1
+		tr
+		th
+		td
+			height 50px
+			text-align left
+			font-weight normal
+			text-transform uppercase
+			letter-spacing 2px
+			color #adb5bd
+			font-size 14px
+		a
+			display block
+			max-width 55px
+			padding 0 10px
+			height 36px
+			line-height 36px
+			color #ffffff
+			text-align center
+			border-radius 5px
+			background #0577ff
+			border 1px solid #0577ff
+			&.active
+				background none
+				border 1px solid #adb5bd
+				color #adb5bd
+
+.footer
+	display flex
+	justify-content space-between
+	padding 30px 0
+	font-size 12px
+	color #bdc4cf
+	line-height 26px
+	.black
+		color #000000
+		padding 0 5px
+	.pages
+		display flex
+		a
+			padding 0 8px
+			margin 0 0 0 24px
+			height 24px
+			line-height 24px
+			border-radius 3px
+			border 1px solid #dde0e7
+			transition 0.3s
+			&:hover
+				background #0577ff
+				border-color #0577ff
+				color #ffffff
